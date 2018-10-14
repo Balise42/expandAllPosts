@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Expand all collapsed posts",
+	"version": "0.1.0",
+	"description": "Expand all collapsed posts in Pluspora",
+
+	"content_scripts": [{
+		"js": ["content.js"],
+		"matches": ["https://pluspora.com/*", "https://www.pluspora.com/*"],
+		"run_at": "document_idle"
+	}],
+	"web_accessible_resources": [
+		"showall.js"
+	]
+}
